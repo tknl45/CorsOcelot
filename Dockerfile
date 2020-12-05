@@ -2,8 +2,6 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 
 WORKDIR /code
 COPY . .
-# 覆蓋設定檔案
-#RUN cp appsettings_azure.json appsettings.json
 
 # 相依檔案下載
 RUN dotnet restore 
